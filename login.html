@@ -1,0 +1,138 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Zambezi Lodge | Moçambique</title>
+    <link rel="stylesheet" href="JS/login.js">
+    <link rel="stylesheet" href="CSS/login.css">
+   
+    <style>
+       
+    </style>
+</head>
+<body>
+   
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-flag">
+                        <div class="flag-stripe green"></div>
+                        <div class="flag-stripe black"></div>
+                        <div class="flag-stripe yellow"></div>
+                        <div class="flag-stripe white"></div>
+                        <div class="flag-stripe red"></div>
+                    </div>
+                    Zambezi<span>Lodge</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Pagina Incial</a></li>
+                    
+                </ul>
+                    <div class="auth-buttons">
+                    <a href="login.html" class="btn">Entrar</a>
+                    <a href="registar.html" class="btn btn-accent">Registar</a>
+                </div>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="login-section">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h1>Entrar na Conta</h1>
+                        <p>Bem-vindo de volta ao Zambezi Lodge</p>
+                    </div>
+                    
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="seu.email@exemplo.com" required>
+                            <div class="error-message">Por favor, insira um e-mail válido</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" class="form-control" placeholder="Sua senha" required>
+                            <span class="password-toggle" id="passwordToggle">
+                                <i class="far fa-eye"></i>
+                            </span>
+                            <div class="error-message">A senha deve ter pelo menos 6 caracteres</div>
+                        </div>
+                        
+                        <div class="remember-forgot">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Lembrar-me</label>
+                            </div>
+                            <a href="#" class="forgot-password" id="forgotPassword">Esqueceu a senha?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent btn-full">Entrar</button>
+                        
+                        <div class="register-link">
+                            Não tem uma conta? <a href="registar.html">Registe-se aqui</a>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Recuperar Senha</h2>
+                <p>Insira o seu e-mail para receber instruções de recuperação</p>
+            </div>
+            <div class="modal-body">
+                <form id="password-reset-form">
+                    <div class="form-group">
+                        <label for="reset-email">E-mail</label>
+                        <input type="email" id="reset-email" class="form-control" placeholder="seu.email@exemplo.com" required>
+                        <div class="error-message">Por favor, insira um e-mail válido</div>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full">Enviar Instruções</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Zambezi Lodge</h3>
+                    <p>Oferecemos experiências únicas de hospedagem com conforto, autenticidade e a calorosa hospitalidade moçambicana.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Marginal, Costa do Sol, Maputo</li>
+                        <li><i class="fas fa-phone"></i> +258 84 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@zambezilodge.co.mz</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3></h3>
+                    <p>Inscreva-se para receber ofertas exclusivas e novidades.</p>
+                    <form>
+                        <input type="email" placeholder="Seu e-mail" class="form-control" style="margin-bottom: 10px;">
+                        <button class="btn btn-accent" style="width: 100%;">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Zambezi Lodge. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
