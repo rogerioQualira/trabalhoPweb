@@ -84,7 +84,7 @@
             background-color: var(--accent-color);
         }
 
-        /* Header */
+       
         header {
             position: fixed;
             top: 0;
@@ -180,7 +180,7 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
+       
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
@@ -451,29 +451,6 @@
         .footer-links a:hover {
             color: var(--secondary-color);
             padding-left: 5px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-5px);
-            color: var(--dark-color);
         }
 
         .copyright {

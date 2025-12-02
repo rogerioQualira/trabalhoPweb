@@ -1,5 +1,5 @@
 
-        /* Reset e configurações gerais */
+        
         * {
             margin: 0;
             padding: 0;
@@ -8,9 +8,9 @@
         }
 
         :root {
-            --primary-color: #006600; /* Verde - cor da bandeira de Moçambique */
-            --secondary-color: #FFD700; /* Amarelo - cor da bandeira */
-            --accent-color: #CE1126; /* Vermelho - cor da bandeira */
+            --primary-color: #006600;
+            --secondary-color: #FFD700; 
+            --accent-color: #CE1126; 
             --light-color: #F5F5F5;
             --dark-color: #333333;
             --transition: all 0.3s ease;
@@ -75,7 +75,6 @@
             width: 100%;
         }
 
-        /* Header */
         header {
             position: fixed;
             top: 0;
@@ -171,7 +170,7 @@
             cursor: pointer;
         }
 
-        /* Main Content */
+      
         main {
             flex: 1;
             display: flex;
@@ -180,7 +179,7 @@
             padding: 120px 0 60px;
         }
 
-        /* Registration Section */
+        
         .registration-section {
             width: 100%;
             max-width: 500px;
@@ -401,7 +400,7 @@
             color: #000;
         }
 
-        /* Footer */
+       
         footer {
             background-color: var(--dark-color);
             color: white;
@@ -435,29 +434,7 @@
             padding-left: 5px;
         }
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-5px);
-            color: var(--dark-color);
-        }
-
+        
         .copyright {
             text-align: center;
             padding-top: 20px;
@@ -465,8 +442,7 @@
             font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
         }
-
-        /* Responsive Design */
+       
         @media (max-width: 768px) {
             .navbar {
                 padding: 15px 0;
