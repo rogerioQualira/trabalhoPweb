@@ -1,5 +1,5 @@
  <script>
-        // Menu Toggle
+     
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
         
@@ -7,7 +7,7 @@
             navLinks.classList.toggle('active');
         });
         
-        // Header Scroll Effect
+       
         const header = document.getElementById('header');
         
         window.addEventListener('scroll', () => {
@@ -18,7 +18,7 @@
             }
         });
         
-        // Password Toggle
+      
         const passwordToggle = document.getElementById('passwordToggle');
         const passwordInput = document.getElementById('password');
         const confirmPasswordToggle = document.getElementById('confirmPasswordToggle');
@@ -36,7 +36,7 @@
             confirmPasswordToggle.innerHTML = type === 'password' ? '<i class="far fa-eye"></i>' : '<i class="far fa-eye-slash"></i>';
         });
         
-        // Form Validation
+       
         const registrationForm = document.getElementById('registration-form');
         
         registrationForm.addEventListener('submit', (e) => {
@@ -44,27 +44,27 @@
             
             let isValid = true;
             
-            // Reset error states
+           
             const inputs = registrationForm.querySelectorAll('.form-control');
             inputs.forEach(input => {
                 input.classList.remove('error');
             });
             
-            // Validate first name
+          
             const firstName = document.getElementById('firstName');
             if (!firstName.value.trim()) {
                 firstName.classList.add('error');
                 isValid = false;
             }
             
-            // Validate last name
+          
             const lastName = document.getElementById('lastName');
             if (!lastName.value.trim()) {
                 lastName.classList.add('error');
                 isValid = false;
             }
             
-            // Validate email
+           
             const email = document.getElementById('email');
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email.value)) {
@@ -72,28 +72,27 @@
                 isValid = false;
             }
             
-            // Validate phone
             const phone = document.getElementById('phone');
             if (!phone.value.trim()) {
                 phone.classList.add('error');
                 isValid = false;
             }
             
-            // Validate password
+            
             const password = document.getElementById('password');
             if (password.value.length < 8) {
                 password.classList.add('error');
                 isValid = false;
             }
             
-            // Validate confirm password
+          
             const confirmPassword = document.getElementById('confirmPassword');
             if (confirmPassword.value !== password.value) {
                 confirmPassword.classList.add('error');
                 isValid = false;
             }
             
-            // Validate terms
+          
             const terms = document.getElementById('terms');
             if (!terms.checked) {
                 alert('Por favor, aceite os Termos de Serviço e Política de Privacidade');
@@ -111,7 +110,7 @@
             }
         });
         
-        // Real-time validation for password confirmation
+       
         const passwordField = document.getElementById('password');
         const confirmPasswordField = document.getElementById('confirmPassword');
         
@@ -122,4 +121,5 @@
                 confirmPasswordField.classList.remove('error');
             }
         });
+
     </script>
